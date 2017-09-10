@@ -110,3 +110,8 @@ $di->setShared('session', function () {
 
     return $session;
 });
+
+$di->setShared('redis', function () {
+    $config = $this->getConfig();
+    return new RedisLibrary($config->redisHost);
+});

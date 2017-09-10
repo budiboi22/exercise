@@ -3,24 +3,25 @@
     <div class="panel-heading">Show</div>
 
     <!-- Table -->
+
     <table class="table">
         <tbody>
-        <tr>
-            <td align="left">Date</td>
-            <td align="left">2015-01-23</td>
-        </tr>
-        <tr>
-            <td align="left">Max Weight</td>
-            <td align="left">52</td>
-        </tr>
-        <tr>
-            <td align="left">Min Weight</td>
-            <td align="left">50</td>
-        </tr>
-        <tr>
-            <td align="left">Variance</td>
-            <td align="left">2</td>
-        </tr>
+            <tr>
+                <td align="left">Date</td>
+                <td align="left"><?= $data['date'] ?></td>
+            </tr>
+            <tr>
+                <td align="left">Max Weight</td>
+                <td align="left"><?= $data['max'] ?></td>
+            </tr>
+            <tr>
+                <td align="left">Min Weight</td>
+                <td align="left"><?= $data['min'] ?></td>
+            </tr>
+            <tr>
+                <td align="left">Variance</td>
+                <td align="left"><?= $data['max'] - $data['min'] ?></td>
+            </tr>
         </tbody>
     </table>
 </div>
